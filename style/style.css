@@ -44,6 +44,40 @@ a {
     height: auto;
 }
 
+.links-page {
+    display: flex;
+    gap: 0 1rem;
+    align-items: center;
+}
+
+.links-page a {
+    color: var(--clr-blue-main);
+}
+
+
+.links-page a:hover {
+    color: var(--laranja);
+}
+
+.tutorial-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 30%;
+}
+
+.tutorial-text h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.tutorial-text p{
+    color: white;
+    font-size: 18px;
+}
+
 /* Sessão 1 - Banner Principal */
 .section-main {
     background-color: var(--clr-blue-main);
