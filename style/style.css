@@ -464,6 +464,10 @@ a {
     display: none;
 }
 
+.oferta-responsive {
+    display: none;
+}
+
 
 @media screen and (max-width: 760px) {
     .links-page {
@@ -474,6 +478,23 @@ a {
         flex-direction: column;
         padding: 0 0 2rem 0;
         background: linear-gradient(0deg, rgba(195,236,254,1) 41%, rgba(50,182,244,1) 85%);
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem !important;
+    }
+
+    .cta .new-price {
+        font-size: 1.5rem;
+        color: var(--white);
+        background-color: #33c84c;
+        padding: 0.2rem;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
     }
 
     .cta-div{
@@ -492,7 +513,9 @@ a {
         width: 100%;
         height: auto;
         align-items: center;
+        padding: 0 0 3rem 0;
         display: flex;
+        gap: 2rem;
         flex-direction: column;
         justify-content: space-around;
         background: linear-gradient(90deg, rgba(10, 42, 75, 1) 11%, rgba(0, 0, 0, 1) 62%);
@@ -508,11 +531,16 @@ a {
         width: 95%;
     }
 
+    .section-tutorial strong {
+        font-size: 12px;
+    }
+
     /* Sessão 2 - Benefícios */
 .benefits {
     padding: 50px 20px;
     background-color: #eaf4ff;
     text-align: center;
+    overflow: hidden;
 }
 
 .benefit-items {
@@ -530,7 +558,7 @@ a {
 }
 
 .benefit-item {
-    width: 200px;
+    width: 125px !important;
     font-size: 14px;
     height: 220px !important;
     text-align: center;
@@ -541,17 +569,37 @@ a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.swiper-container {
-    display: block;
-}
+.swiper-slide {
+    width: auto;
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
 
-.swiper-button-next, .swiper-button-prev {
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
+
+.swiper-container {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .oferta-responsive {
+    display: block;
+  }
 
 .icon {
     width: 2rem;
@@ -599,5 +647,32 @@ a {
     font-size: 16px;
 }
 
-    
+.section-tutorial img {
+    padding: 0 !important;
+}
+
+.section-icons-responsive .cta {
+    gap: 0.5rem;
+}
+
+.button-main {
+    width: 150px;
+}
+
+.book-container::after {
+    left: 0 !important;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .section-icons-responsive .cta-button {
+        font-size: 16px;
+        padding: 0.8rem !important;
+        margin: 1rem 0;
+    }
 }
