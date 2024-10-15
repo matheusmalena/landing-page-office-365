@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacote Office 365 Vitalício - Malena Tech</title>
-    <link rel="shortcut icon" href="./fotos/office.png" type="image/x-icon">
+    <title>Pacote Office 365 Vitalício - Microsoft</title>
+    <link rel="shortcut icon" class="icon-site" href="./fotos/office.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +13,15 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
 
     <!-- Sessão 1: Banner Principal -->
     <header class="cabecalho">
-        <img src="./fotos/office.png" alt="">
+        <img src="./fotos/pngegg.png" alt="">
         <div class="links-page">
             <a href="#conheca">Conheça</a>
             <a href="">Beneficios</a>
@@ -32,11 +34,11 @@
 
     <section class="section-main">
         <div class="hero-content">
-            <h1 class="animate-fadein">Pacote Office 365 - Acesso Vitalício</h1>
-            <p class="animate-fadein-delay">De <span class="old-price">R$ 499,90</span> por apenas <span
-                    class="new-price">R$ 79,90</span></p>
-            <p class="animate-bounce">Ative seu pacote em menos de 5 minutos!</p>
-            <a href="https://pay.kiwify.com.br/Cb8OATT" class="cta-button animate-slideup">Ativar Office Agora</a>
+            <h1 class="animate-fadein">Ative seu pacote Office em menos de 5 minutos!</h1>
+            <p class="animate-fadein-delay">De <span class="old-price">R$ 299,90</span> por apenas <span
+                    class="new-price">R$ 59,90</span></p>
+            <p class="animate-bounce">Acesso completo e vitalício</p>
+            <a target="_blank" href="https://pay.kiwify.com.br/Cb8OATT" class="cta-button animate-slideup">Quero ativar Agora</a>
         </div>
         <div class="book-container">
             <img src="./fotos/WhatsApp_Image_2024-10-10_at_21.35.22__1_-removebg-preview.png" alt="">
@@ -49,7 +51,7 @@
         <h2>Por que escolher o Office 365?</h2>
         <p>Com o Office 365, você terá acesso a todos os programas essenciais para produtividade e colaboração em um
             único pacote.</p>
-        <div class="benefit-items">
+        <div class="benefit-items no-responsive">
             <div class="benefit-item animate-fadein-delay">
                 <img class="icon" src="./fotos/word.png" alt="">
                 <h3>Word</h3>
@@ -88,6 +90,44 @@
         </div>
     </section>
 
+     <!-- Container do Swiper -->
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide benefit-item animate-fadein-delay">
+                <img class="icon" src="./fotos/word.png" alt="Word">
+                <h3>Word</h3>
+                <p>Produza documentos profissionais com ferramentas avançadas de edição, templates e revisão ortográfica automática.</p>
+            </div>
+            <div class="swiper-slide benefit-item animate-fadein">
+                <img class="icon" src="./fotos/excel.png" alt="Excel">
+                <h3>Excel</h3>
+                <p>Crie planilhas avançadas e gráficos para análise detalhada de dados. Acompanhe suas finanças, desempenho e muito mais.</p>
+            </div>
+            <div class="swiper-slide benefit-item animate-fadein">
+                <img class="icon" src="./fotos/pp (1).png" alt="PowerPoint">
+                <h3>PowerPoint</h3>
+                <p>Crie apresentações impactantes com design moderno e animações para atrair a atenção do seu público.</p>
+            </div>
+            <div class="swiper-slide benefit-item animate-fadein-delay">
+                <img class="icon" src="./fotos/outlook.png" alt="Outlook">
+                <h3>Outlook</h3>
+                <p>Gerencie seus e-mails de forma eficiente, com integração de calendários e organização de compromissos.</p>
+            </div>
+            <div class="swiper-slide benefit-item animate-fadein">
+                <img class="icon" src="./fotos/ondedrive.png" alt="OneDrive">
+                <h3>OneDrive</h3>
+                <p>Armazene todos os seus arquivos na nuvem, com 1TB de espaço e acesso de qualquer dispositivo.</p>
+            </div>
+            <div class="swiper-slide benefit-item animate-fadein-delay">
+                <img class="icon-escudo" src="./fotos/escudo-de-seguranca.png" alt="Segurança Total">
+                <h3>Segurança Total</h3>
+                <p>Proteção avançada contra ameaças cibernéticas, garantindo que seus documentos e dados estejam sempre seguros.</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
     <section class="info-section">
         <h2>Ative seu Office em menos de 5 minutos!</h2>
     </section>
@@ -95,10 +135,8 @@
     <section class="section-tutorial">
         <div class="tutorial-text">
             <h2>Metodo secreto!</h2>
-            <p>Com apenas um só comando, ative seu Office 365 de forma totalmente legal e segura!</p>
-            <p>Pare de gastar com licenças caras e resolva isso hoje mesmo com um método exclusivo que ninguém vai te
-                contar!
-            </p>
+            <p>Descubra o método mais rápido e fácil para ativar seu Office 365 diretamente pelo terminal – 100% seguro, legalizado e sem complicações!</p> <br> <br> <br>
+            <strong>"Pare de gastar com licenças caras e resolva isso hoje mesmo com um método exclusivo que ninguém vai te contar!"</strong>
 
         </div>
         <img src="./fotos/code.png" alt="">
@@ -136,8 +174,8 @@
         <section class="section-icons-responsive">
         <div class="cta">
             <h2>Economize 80% e Ative Seu Office em Minutos!</h2>
-            <p>De R$ 499,90 por apenas <span class="new-price">R$ 79,90</span> – Oferta Limitada!</p>
-            <a href="https://pay.kiwify.com.br/Cb8OATT" class="cta-button animate-bounce">🚀 Quero Ativar Meu Office
+            <p>De R$ 299,90 por apenas <span class="new-price">R$ 59,90</span> – Oferta Limitada!</p>
+            <a target="_blank" href="https://pay.kiwify.com.br/Cb8OATT" class="cta-button animate-bounce">🚀 Quero Ativar Meu Office
                 Agora!</a>
         </div>
         <div class="section-icons-img" >
@@ -180,7 +218,7 @@
         <p>Estamos tão confiantes de que você vai amar o Office 365 que oferecemos uma garantia de <strong>reembolso de
                 7 dias</strong>! Sem perguntas, sem complicações.</p>
         <img class="icon-cliente" src="./fotos/satisfacao-do-cliente.png" alt="">
-        <a href="#cta" class="cta-button">Quero ativar meu Office Agora!</a>
+        <a target="_blank" href="#cta" class="cta-button">Quero ativar meu Office Agora!</a>
     </section>
 
     <!-- Footer -->
@@ -188,6 +226,7 @@
         <p>&copy; 2024 Malena Tech - Todos os Direitos Reservados</p>
     </footer>
 
+    <script src="./actions/script.js"></script>
 </body>
 
 </html>

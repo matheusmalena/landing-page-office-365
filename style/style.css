@@ -1,12 +1,11 @@
 /* Estilos Gerais */
 :root {
-    --clr-blue-main: #0aa6f0;
+    --clr-blue-main: #44b2e6;
     --laranja: #ec451c;
     --laranja-hover: #c74120;
     --green: #33c84c;
     --white: #f4f4f4;
 }
-
 
 body {
     margin: 0;
@@ -79,32 +78,14 @@ a {
 }
 
 .links-page a {
-    color: var(--clr-blue-main);
+    color: var(--laranja);
 }
 
 
 .links-page a:hover {
-    color: var(--laranja);
+    color: var(--clr-blue-main);
 }
 
-.tutorial-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    width: 30%;
-}
-
-.tutorial-text h2 {
-    text-align: center;
-    font-size: 32px;
-}
-
-.tutorial-text p {
-    color: white;
-    font-size: 18px;
-}
 
 /* Sessão 1 - Banner Principal */
 .section-main {
@@ -118,7 +99,7 @@ a {
 }
 
 .section-main h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -129,6 +110,10 @@ a {
 
 .hero-content {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .section-main p {
@@ -215,12 +200,28 @@ a {
 }
 
 .benefit-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-item {
     width: 200px;
     padding: 20px;
     margin: 20px 0;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 .icon {
@@ -358,14 +359,39 @@ a {
     height: auto;
     align-items: center;
     display: flex;
-    justify-content: end;
-    background: linear-gradient(90deg, rgba(10, 42, 75, 1) 11%, rgba(0, 0, 0, 1) 62%);
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgba(10, 42, 75, 1) 11%, rgba(0, 0, 0, 1) 50%);
 }
 
 .section-tutorial img {
     width: 50%;
     padding: 3rem;
 }
+
+.tutorial-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    width: 35%;
+}
+
+.tutorial-text h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.tutorial-text strong {
+    text-align: center;
+}
+
+.tutorial-text p {
+    color: white;
+    font-size: 18px;
+}
+
 
 /* Sessão 5 - Garantia de Satisfação */
 .satisfaction-guarantee {
@@ -434,6 +460,10 @@ a {
     height: auto;
 }
 
+.swiper-container {
+    display: none;
+}
+
 
 @media screen and (max-width: 760px) {
     .links-page {
@@ -451,10 +481,123 @@ a {
     }
 
     .info-section-orange h2, .info-section h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .section-icons-img {
         width: 100%;
     }
+
+    .section-tutorial {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: linear-gradient(90deg, rgba(10, 42, 75, 1) 11%, rgba(0, 0, 0, 1) 62%);
+    }
+
+    .tutorial-text {
+        width: 90%;
+        padding: 0 0.5rem;
+    }
+
+    .section-tutorial img {
+        text-align: center;
+        width: 95%;
+    }
+
+    /* Sessão 2 - Benefícios */
+.benefits {
+    padding: 50px 20px;
+    background-color: #eaf4ff;
+    text-align: center;
+}
+
+.benefit-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-item {
+    width: 200px;
+    font-size: 14px;
+    height: 220px !important;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-container {
+    display: block;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    width: 2rem;
+    height: auto;
+    font-size: 2rem;
+    color: #4ecdc4;
+}
+
+.icon-escudo {
+    width: 2.5rem;
+    height: auto;
+}
+
+.no-responsive {
+    display: none;
+}
+
+.section-main {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.hero-content {
+    width: 100%;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-item {
+    width: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-item p{
+   font-size: 12px;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+}
+
+    
 }
