@@ -195,6 +195,11 @@ a {
     color: #4ecdc4;
 }
 
+.icon-escudo {
+    width: 2.5rem;
+    height: auto;
+}
+
 /* Sessão 3 - Funcionalidades */
 .features {
     padding: 50px 20px;
