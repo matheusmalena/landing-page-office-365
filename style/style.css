@@ -173,7 +173,7 @@ a {
 .cta-button {
     background-color: var(--laranja);
     color: white;
-    padding: 10px;
+    padding: 10px 8px;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
@@ -671,4 +671,15 @@ a {
         padding: 0.8rem !important;
         margin: 1rem 0;
     }
+
+    .section-main .cta-button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho img {
+        width: 40%;
+    }
+
 }
