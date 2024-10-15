@@ -293,6 +293,11 @@ a {
     text-align: center;
     color: white;
     padding: 50px 100px;
+    gap: 1rem;
+}
+
+.cta .cta-button {
+    margin-top: 2rem;
 }
 
 /* Footer */
@@ -311,15 +316,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-}
-
-.cta-div {
-    width: 30%;
-    height: auto;
-    background-color: #32b6f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .section-icons-responsive{
@@ -660,7 +656,7 @@ a {
 }
 
 .book-container::after {
-    left: 0 !important;
+    margin-left: 2rem;
 }
 
 }
