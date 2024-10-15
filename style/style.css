@@ -1,9 +1,10 @@
 /* Estilos Gerais */
 :root {
-    --clr-blue-main: #0a2a4b;
-    --laranja: #dc3e15;
-    --laranja-hover: #b93210;
+    --clr-blue-main: #0aa6f0;
+    --laranja: #ec451c;
+    --laranja-hover: #c74120;
     --green: #33c84c;
+    --white: #f4f4f4;
 }
 
 
@@ -102,20 +103,48 @@ a {
     width: 50%;
 }
 .section-main p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 .old-price {
     text-decoration: line-through;
-    color: #dd0000;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.2rem;
 }
 .new-price {
     font-size: 1.5rem;
-    color: var(--green);
-    padding: 0.3rem;
+    color: var(--white);
+    background-color: #33c84c;
+    padding: 0.2rem;
     font-weight: 700;
     border: none;
     border-radius: 8px;
+}
+
+.book-container {
+    display: inline-block;
+    position: relative;
+}
+
+.book-container img {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.book-container::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 65%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.116);
+    border-radius: 100%;
+    filter: blur(5px);
+    z-index: -0;
 }
 
 .info-section {
@@ -240,6 +269,14 @@ a {
     border-radius: 8px;
 }
 
+.button-main:hover {
+    background-color: var(--laranja-hover);
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid var(--laranja-hover);
+    border-radius: 8px;
+}
+
 .section-tutorial {
     width: 100%;
     height: auto;
@@ -253,6 +290,74 @@ a {
     width: 50%;
     padding: 3rem;
 }
+
+/* Sessão 5 - Garantia de Satisfação */
+.satisfaction-guarantee {
+    background-color: #f9fbff;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.satisfaction-guarantee h2 {
+    font-size: 2.5rem;
+    color: var(--clr-blue-main);
+    margin-bottom: 20px;
+}
+
+.satisfaction-guarantee p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.satisfaction-guarantee ul {
+    list-style: none;
+    padding: 0;
+}
+
+.satisfaction-guarantee li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: var(--laranja);
+}
+
+.satisfaction-guarantee li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: var(--laranja);
+}
+
+.satisfaction-guarantee .cta-button {
+    margin-top: 30px;
+    background-color: var(--green);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.satisfaction-guarantee .cta-button:hover {
+    background-color: #28a745;
+}
+
+.icon-cliente {
+    width: 100px;
+    text-align: center;
+    height: auto;
+}
+
 
 @media screen and (max-width: 760px) {
     .links-page {
