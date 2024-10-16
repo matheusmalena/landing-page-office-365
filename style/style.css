@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.remove {
+    display: none;
+}
+
 
 /* Animações */
 @keyframes fadeIn {
