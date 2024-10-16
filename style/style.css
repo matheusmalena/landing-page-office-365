@@ -501,6 +501,10 @@ a {
     font-weight: bold;
 }
 
+.swiper-container {
+    display: none;
+}
+
 
 @media screen and (max-width: 760px) {
     .links-page {
