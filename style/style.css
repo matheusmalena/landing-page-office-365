@@ -71,6 +71,10 @@ a {
     height: auto;
 }
 
+.cabecalho .cta-button {
+    text-align: center;
+}
+
 .links-page {
     display: flex;
     gap: 0 1rem;
