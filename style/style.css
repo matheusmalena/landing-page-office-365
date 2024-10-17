@@ -741,7 +741,12 @@ a {
 
 @media screen and (max-width: 500px) {
     .cabecalho img {
-        width: 40%;
+        width: 30%;
+    }
+
+    .cabecalho .cta-button {
+        width: 120px;
+        font-size: 12px;
     }
 
 }
